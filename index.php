@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
 	<!-- Site CSS -->
     <link rel="stylesheet" href="css/style.css">
-		<link rel="stylesheet" href="css/style1.css">
+	<link rel="stylesheet" href="css/style1.css">
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="css/responsive.css">
 
@@ -37,7 +37,7 @@
 			<a class="nav-link" href="about-us.html" title="About us">About us</a>
 			<a class="nav-link" href="why-healthy-meal.html" title="Why Healthy Meal">Why Healthy Meal</a>
 			<a class="nav-link" href="healthy-food.html" title="Healthy Food">Healthy Food</a>
-			<a class="nav-link" href="contact.html" title="Contact">Contact</a>
+			<a class="nav-link" href="contact.php" title="Contact">Contact</a>
 			<a class="nav-link" href="about-your-body.html" title="About Your Body">About Your Body</a>
 			<a class="nav-link-admin" href="login.php" title="Admin Login" >Admin Login</a>
 		</nav>
