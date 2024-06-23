@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Define the regex patterns
     $usernamePattern = "/^[a-zA-Z0-9]{5,}$/"; // Alphanumeric characters, at least 5
-    $passwordPattern = "/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/"; // Minimum eight characters, at least one letter and one number
+    $passwordPattern = "/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{7,}$/"; // Minimum eight characters, at least one letter and one number
 
     // Validate the inputs
     if (!preg_match($usernamePattern, $username)) {
