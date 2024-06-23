@@ -4,28 +4,25 @@
 .top-navbar{
 	position: center;
   background-color: black;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .header{
   text-align: center;
   font-family:serif;
-  color: white;
+  color: rgb(0, 0, 0);
 }
-.navbar{
-    width: 800px;
-    height: 75px;
-    margin: auto;
-    background: black;
+.navbar {
+    text-align: center;
+    background-color: black;
 }
 
 .navbar a{
-  margin: auto;
-  color:white;
+  margin:0 1rem;
+  color:rgb(0, 0, 0);
   text-align: center;
   text-decoration: none;
   float: none;
-	font-family:serif;
 }
 
 .navbar a:hover{
@@ -33,3 +30,5 @@
   border-bottom: .1rem solid var(--main-color);
   padding-bottom: .5rem;
 }
+
+
