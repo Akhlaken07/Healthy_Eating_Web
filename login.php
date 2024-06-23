@@ -6,8 +6,24 @@ if ($conn->connect_error){
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $username = $_POST['username'];
-    $password = $_POST['password']; 
+    $username = filter_var($_POST['username'], FILTER_SANITIZE_STRING);
+    $password = filter_var($_POST['password'], FILTER_SANITIZE_STRING); 
+
+    // Define the regex patterns
+    $usernamePattern = "/^[a-zA-Z0-9]{5,}$/"; // Alphanumeric characters, at least 5
+    $passwordPattern = "/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/"; // Minimum eight characters, at least one letter and one number
+
+    // Validate the inputs
+    if (!preg_match($usernamePattern, $username)) {
+        echo "<script>alert('Invalid username');</script>";
+        return;
+    }
+
+    if (!preg_match($passwordPattern, $password)) {
+        echo "<script>alert('Invalid password');</script>";
+        return;
+    }
+
     $stmt = $conn->prepare("SELECT * FROM userdetails WHERE uname=? AND pwd=?");
     $stmt->bind_param("ss", $username, $password);
     $stmt->execute();
