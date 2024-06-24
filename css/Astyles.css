@@ -1,0 +1,64 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+.header{
+  text-align: center;
+  font-family:serif;
+}
+
+Topic{
+  word-spacing: 10px;
+  text-align: center;
+  font-family: arial
+}
+
+.navbar {
+    text-align: center;
+}
+
+.navbar a{
+  margin:0 1rem;
+  color:white;
+  text-align: center;
+  text-decoration: none;
+  float: none;
+}
+
+.navbar a:hover{
+  color:var(--main-color);
+  border-bottom: .1rem solid var(--main-color);
+  padding-bottom: .5rem;
+}
+
+.WallpaperA{
+
+}
+
+.MainAz{
+  float: right;
+  margin-right: 10px;
+}
+
+.buttonHF{
+  cursor: pointer;
+  background-color: orange;
+  padding: 20px;
+}
+
+.buttonR1{
+  cursor: pointer;
+  background-color: orange;
+  padding: 20px;
+  float: right;
+  margin-right: 400px;
+}
+
+.buttonR2{
+  cursor: pointer;
+  background-color: orange;
+  padding: 20px;
+  float: right;
+  margin-right:350px;
+}
