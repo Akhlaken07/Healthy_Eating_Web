@@ -1,0 +1,34 @@
+/*------------------------------------------------------------------
+    HEADER
+-------------------------------------------------------------------*/
+.top-navbar{
+	position: center;
+  background-color: black;
+  color: rgb(0, 0, 0);
+}
+
+.header{
+  text-align: center;
+  font-family:serif;
+  color: rgb(0, 0, 0);
+}
+.navbar {
+    text-align: center;
+    background-color: black;
+}
+
+.navbar a{
+  margin:0 1rem;
+  color:rgb(0, 0, 0);
+  text-align: center;
+  text-decoration: none;
+  float: none;
+}
+
+.navbar a:hover{
+  color:var(--main-color);
+  border-bottom: .1rem solid var(--main-color);
+  padding-bottom: .5rem;
+}
+
+
